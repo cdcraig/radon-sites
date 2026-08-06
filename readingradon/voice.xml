@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Dial timeout="25" record="record-from-answer-dual" answerOnBridge="true">
+    <Number url="https://readingradon.com/whisper.xml">+16023167459</Number>
+  </Dial>
+  <Say>Sorry, we could not connect you. Please try again.</Say>
+</Response>
