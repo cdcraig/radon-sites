@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-  <Say voice="Polly.Joanna">New radon lead from Davenport IA. Connecting now.</Say>
+  <Say voice="Polly.Joanna">This is a radon lead from davenportradon dot com. Connecting the caller now.</Say>
 </Response>
