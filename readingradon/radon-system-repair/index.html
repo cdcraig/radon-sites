@@ -171,7 +171,7 @@ footer .disc{font-size:12px;color:#64748b;margin-top:22px;padding-top:16px;borde
   <section class="center"><div class="wrap">
     <h2>Common failures on Reading radon systems</h2>
     <div style="max-width:760px;margin:0 auto;text-align:left">
-    <div class="review-note">DRAFT — human editorial pass required before publish.</div>
+    
     
     <p>Around Reading, the systems most in need of repair are often the oldest in the country — Berks County homes were among the first in America to be mitigated after the 1984 Watras discovery, and a system installed decades ago may be on its second or third fan with seals and pipe joints that have never been redone. Pennsylvania requires DEP certification for mitigation contractors, and on Reading Prong geology a repair is not a formality: the formation feeds radon aggressively enough that a failed system can return a house to levels far above the action level, which is why every repair here should end with a documented retest.</p><p>The most common call is a <strong>dead or dying fan</strong>. A fan that has gone silent, or one that has become noticeably louder or started vibrating, is usually at the end of its bearings. Replacement is straightforward, but the replacement fan has to be matched to the original design — an undersized unit will not hold suction under the slab, and an oversized one wastes electricity and can pull conditioned air out of the house.</p><p>Other frequent problems: <strong>seal failures</strong> where the suction point meets the slab or around a sump lid, which let the fan pull room air instead of soil gas; <strong>cracked or disconnected pipe</strong>, often in an attic run or where the pipe exits; and <strong>systems that were undersized from the start</strong> and never actually got the house below 4.0 pCi/L. Any repair should end the same way an installation does — with a retest that proves the level came back down.</p>
     
@@ -196,7 +196,9 @@ footer .disc{font-size:12px;color:#64748b;margin-top:22px;padding-top:16px;borde
     <h2>Get your radon system checked in Reading</h2>
     <p class="lead-in">Serving Reading and the surrounding Berks County area. No obligation — most quotes back same day.</p>
     <div class="qcard">
-      <form method="post" action="#" aria-label="Request Radon System Repair">
+      <form method="post" action="https://radon-lead-forms-4656-prod.twil.io/lead" aria-label="Request Radon System Repair">
+        <input type="hidden" name="site" value="readingradon">
+        <input type="hidden" name="back" value="https://readingradon.onrender.com/">
         <label for="n">Name</label><input id="n" name="name" autocomplete="name" required>
         <label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel" required>
         <label for="i">What do you need?</label>
