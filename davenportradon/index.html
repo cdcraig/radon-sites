@@ -59,6 +59,10 @@ p{margin:12px 0}
 .viz{margin:20px 0 0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
 .viz svg{width:100%;height:auto;display:block}
 .viz figcaption{font-size:12.5px;color:var(--muted);margin-top:12px;padding-top:11px;border-top:1px dashed var(--line);line-height:1.5}
+.legend{list-style:none;margin:16px 0 0;display:grid;gap:9px}
+.legend li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--body);line-height:1.5}
+.legend span{width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:12.5px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px}
+@media(min-width:700px){.legend{grid-template-columns:1fr 1fr;gap:11px 24px}}
 .checks{list-style:none;margin:16px 0 0}
 .checks li{display:flex;gap:11px;align-items:flex-start;margin:11px 0;font-size:15.5px}
 .checks svg{color:var(--ok);margin-top:4px;font-size:17px}
@@ -168,36 +172,38 @@ footer .disc{font-size:12px;color:#7d90a9;margin-top:18px;padding-top:16px;borde
     <h2>What a radon mitigation system actually does</h2>
     <div class="review-note">DRAFT — human editorial pass required before publish.</div>
     <p>The standard fix for a Davenport home is <strong>active sub-slab depressurization</strong>. A suction point is cut through the basement slab, a sealed PVC pipe is run from beneath the foundation up and out of the house, and an inline fan runs continuously to pull soil gas out from under the slab and vent it above the roofline — before it can enter the living space. Sump pits are sealed and vented into the same system, and open foundation cracks are sealed so the fan pulls from the soil rather than from the room.</p><p>Scott County sits on glacial till laid over uranium-bearing bedrock along the Mississippi — the same deposit that makes eastern Iowa one of the most radon-prone corridors in the country. A correctly designed system usually brings levels well below 4.0 pCi/L, and often under 2.0. It runs on roughly the electricity of a low-wattage light bulb and needs almost no maintenance beyond watching the manometer gauge on the pipe. Any reputable installer performs a <strong>post-mitigation test</strong> after the system has run — a system that has not been re-tested has not been proven to work.</p>
-    <figure class="viz">
-<svg viewBox="0 0 640 330" role="img" aria-label="Cross-section of an active sub-slab depressurization radon system" xmlns="http://www.w3.org/2000/svg">
+    <figure class="viz diagram">
+<svg viewBox="0 0 600 330" role="img" aria-label="Cross-section of a home with an active sub-slab depressurization radon system: pipe from beneath the slab, inline fan, venting above the roofline" xmlns="http://www.w3.org/2000/svg">
 <title>How an active sub-slab depressurization system works</title>
-<rect x="0" y="196" width="640" height="134" fill="#efe6da"/>
-<rect x="0" y="186" width="640" height="12" fill="#8d7d68"/>
-<path d="M92 96 L300 24 L508 96 Z" fill="#c9d8ee"/>
-<path d="M92 96 L300 24 L508 96 Z" fill="none" stroke="#7f96b8" stroke-width="2"/>
-<rect x="120" y="96" width="360" height="90" fill="#fff" stroke="#7f96b8" stroke-width="2"/>
-<rect x="120" y="186" width="360" height="10" fill="#b9c3cf" stroke="#7f96b8" stroke-width="1.5"/>
-<text x="300" y="140" text-anchor="middle" font-size="15" font-weight="700" fill="#0f1b2d">Living space</text>
-<text x="300" y="160" text-anchor="middle" font-size="12.5" fill="#6b7c93">radon kept out</text>
-<text x="132" y="209" font-size="12" font-weight="700" fill="#7a6a55">SLAB</text>
-<ellipse cx="300" cy="250" rx="150" ry="34" fill="#dfd2bf"/>
-<text x="300" y="255" text-anchor="middle" font-size="12" fill="#7a6a55">gas-permeable aggregate — suction field</text>
-<g stroke="#c0392b" stroke-width="2" fill="none" marker-end="url(#ar)">
-<path d="M180 300 L180 262"/><path d="M300 306 L300 286"/><path d="M420 300 L420 262"/>
+<defs><marker id="rup" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker></defs>
+<rect x="0" y="212" width="600" height="118" fill="#efe6da"/>
+<rect x="0" y="205" width="600" height="8" fill="#8d7d68"/>
+<path d="M78 106 L288 38 L498 106 Z" fill="#c9d8ee" stroke="#7f96b8" stroke-width="2" stroke-linejoin="round"/>
+<rect x="112" y="106" width="356" height="99" fill="#fff" stroke="#7f96b8" stroke-width="2"/>
+<rect x="112" y="205" width="356" height="9" fill="#b9c3cf" stroke="#7f96b8" stroke-width="1.5"/>
+<text x="232" y="150" text-anchor="middle" font-size="17" font-weight="700" fill="#0f1b2d">Living space</text>
+<text x="232" y="172" text-anchor="middle" font-size="13.5" fill="#6b7c93">radon kept out</text>
+<ellipse cx="272" cy="262" rx="132" ry="25" fill="#dfd2bf"/>
+<g stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#rup)">
+<path d="M170 318 L170 294"/><path d="M240 322 L240 294"/><path d="M310 318 L310 294"/>
 </g>
-<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker></defs>
-<text x="300" y="322" text-anchor="middle" font-size="12" fill="#c0392b">radon rising from soil</text>
-<path d="M300 250 L300 96 L300 60 L300 14" stroke="#2c3e50" stroke-width="9" fill="none" stroke-linecap="round"/>
-<path d="M300 250 L300 14" stroke="#7f8c8d" stroke-width="4" fill="none" stroke-linecap="round"/>
-<circle cx="300" cy="70" r="17" fill="#0a5ad4" stroke="#084bb0" stroke-width="2"/>
-<text x="300" y="75" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">FAN</text>
-<text x="332" y="20" font-size="12.5" font-weight="700" fill="#0f1b2d">vents above roofline</text>
-<text x="332" y="70" font-size="12.5" fill="#41536b">continuous inline fan</text>
-<text x="332" y="252" font-size="12.5" fill="#41536b">suction point through slab</text>
-<rect x="470" y="150" width="52" height="36" rx="4" fill="#fff" stroke="#7f96b8" stroke-width="1.5"/>
-<path d="M480 168 h10 v-9 h10 v9 h10" stroke="#0d8a5f" stroke-width="2" fill="none"/>
-<text x="496" y="200" text-anchor="middle" font-size="11" fill="#6b7c93">manometer</text>
+<path d="M398 262 L398 16" stroke="#2c3e50" stroke-width="10" fill="none" stroke-linecap="round"/>
+<path d="M398 262 L398 16" stroke="#7f8c8d" stroke-width="4" fill="none" stroke-linecap="round"/>
+<circle cx="398" cy="128" r="19" fill="#0a5ad4" stroke="#084bb0" stroke-width="2"/>
+<text x="398" y="133" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">FAN</text>
+<g font-size="14" font-weight="800" text-anchor="middle">
+<circle cx="448" cy="26" r="14" fill="#d64520"/><text x="448" y="31" fill="#fff">1</text>
+<circle cx="448" cy="128" r="14" fill="#d64520"/><text x="448" y="133" fill="#fff">2</text>
+<circle cx="448" cy="258" r="14" fill="#d64520"/><text x="448" y="263" fill="#fff">3</text>
+<circle cx="150" cy="262" r="14" fill="#d64520"/><text x="150" y="267" fill="#fff">4</text>
+</g>
 </svg>
+<ol class="legend">
+<li><span>1</span>Vents above the roofline, away from windows and doors</li>
+<li><span>2</span>Continuous inline fan — runs 24/7, about the draw of a lightbulb</li>
+<li><span>3</span>Sealed suction point cut through the slab</li>
+<li><span>4</span>Gas-permeable aggregate — the suction field under the foundation</li>
+</ol>
 <figcaption>Active sub-slab depressurization: a fan pulls soil gas from beneath the slab and vents it above the roofline, before it can enter the Davenport home.</figcaption>
 </figure>
     <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Active sub-slab depressurization — the EPA-recognized method for slab and basement homes</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Sump pit sealing and crawlspace membrane systems where the foundation calls for it</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Post-installation retest to confirm the level actually dropped</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Systems vented above the roofline and installed to state credentialing standards</span></li></ul>
