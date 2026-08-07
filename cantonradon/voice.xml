@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
+  <Sms to="+16023167459" from="+13306259850">Lead call on cantonradon.com — caller connecting to +16023167459</Sms>
   <Dial timeout="25" record="record-from-answer-dual" answerOnBridge="true">
-    <Number url="https://cantonradon.com/whisper.xml">+16023167459</Number>
+    <Number url="https://cantonradon.onrender.com/whisper.xml">+16023167459</Number>
   </Dial>
   <Say>Sorry, we could not connect you. Please try again.</Say>
 </Response>
