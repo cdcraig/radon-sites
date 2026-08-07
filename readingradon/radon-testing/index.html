@@ -56,6 +56,9 @@ p{margin:12px 0}
 .stat b{display:block;font-size:25px;color:var(--brand);line-height:1.1;letter-spacing:-.02em;font-weight:800}
 .stat span{display:block;font-size:12px;color:var(--muted);margin-top:5px;line-height:1.4}
 .src{font-size:11.5px;color:var(--muted);margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+.viz{margin:20px 0 0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+.viz svg{width:100%;height:auto;display:block}
+.viz figcaption{font-size:12.5px;color:var(--muted);margin-top:12px;padding-top:11px;border-top:1px dashed var(--line);line-height:1.5}
 .checks{list-style:none;margin:16px 0 0}
 .checks li{display:flex;gap:11px;align-items:flex-start;margin:11px 0;font-size:15.5px}
 .checks svg{color:var(--ok);margin-top:4px;font-size:17px}
@@ -141,12 +144,31 @@ footer .disc{font-size:12px;color:#7d90a9;margin-top:18px;padding-top:16px;borde
       <p>Radon is invisible, odorless, and the <strong>second leading cause of lung cancer</strong> in the United States after smoking, according to the EPA. Berks County sits on the <strong>Reading Prong</strong>, the uranium-bearing formation that produced the 1984 Watras house at roughly <strong>2,700 pCi/L</strong> and put radon on the national agenda. PA DEP reports about <strong>40% of Pennsylvania homes</strong> test above the <strong>4.0 pCi/L</strong> action level, with Reading Prong counties running higher. Because the Prong is fractured crystalline rock rather than uniform soil, results swing hard between neighbouring Reading properties — which is exactly why an individual test, not a regional assumption, is the only thing that tells you where your home stands.</p>
       <p class="src">Sources: EPA Map of Radon Zones (Pennsylvania); PA DEP Radon Division; USGS/PA geology of the Reading Prong; 1984 Watras case documentation</p>
     </div>
+    <figure class="viz">
+<svg viewBox="0 0 640 208" role="img" aria-label="Share of homes testing above the EPA action level of 4.0 pCi/L. Sources: EPA (national, ~1 in 15 homes); state radon surveys." xmlns="http://www.w3.org/2000/svg">
+<title>Homes above the EPA radon action level</title>
+<text x="120" y="35" text-anchor="end" font-size="14" font-weight="500" fill="#6b7c93">U.S. average</text>
+<rect x="132" y="20" width="37.76436552274541" height="22" rx="4" fill="#c3d3e8"/>
+<text x="178.7643655227454" y="36" font-size="14" font-weight="600" fill="#6b7c93">6.7%</text>
+<text x="120" y="81" text-anchor="end" font-size="14" font-weight="700" fill="#0f1b2d">Pennsylvania</text>
+<rect x="132" y="66" width="225.45889864325616" height="22" rx="4" fill="#d64520"/>
+<text x="366.45889864325613" y="82" font-size="14" font-weight="800" fill="#d64520">40%</text>
+<text x="120" y="127" text-anchor="end" font-size="14" font-weight="500" fill="#6b7c93">Ohio</text>
+<rect x="132" y="112" width="281.8236233040702" height="22" rx="4" fill="#c3d3e8"/>
+<text x="422.8236233040702" y="128" font-size="14" font-weight="600" fill="#6b7c93">50%</text>
+<text x="120" y="173" text-anchor="end" font-size="14" font-weight="500" fill="#6b7c93">Iowa</text>
+<rect x="132" y="158" width="403.5714285714285" height="22" rx="4" fill="#c3d3e8"/>
+<text x="544.5714285714284" y="174" font-size="14" font-weight="600" fill="#6b7c93">71.6%</text>
+</svg>
+<figcaption>Share of homes testing above the EPA action level of 4.0 pCi/L. Sources: EPA (national, ~1 in 15 homes); state radon surveys.</figcaption>
+</figure>
   </div></section>
 
   <section><div class="wrap">
     <h2>Short-term, long-term, and real estate tests</h2>
     <div class="review-note">DRAFT — human editorial pass required before publish.</div>
     <p>A <strong>short-term test</strong> runs 2–7 days under closed-house conditions and is where most Reading homeowners start — fast, inexpensive, and usually enough to tell you whether to act. A <strong>long-term test</strong> runs 90 days or more and gives a truer annual average, since radon swings with season, snow cover, and how the house is being heated. Pennsylvania winters produce the highest readings: the house is closed, the stack effect draws hardest, and frozen ground pushes soil gas toward the foundation.</p><p><strong>Real estate transaction testing</strong> is its own category. It is normally a short-term test performed by a third party under documented closed-house conditions, because the result becomes part of the negotiation. If a test is being run for a sale, it should be done by someone with no stake in selling the mitigation work afterward.</p>
+    
     <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Short-term (2–7 day) tests for a fast answer</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Long-term (90+ day) tests for a true annual average</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Documented real estate transaction testing under closed-house conditions</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Post-mitigation verification testing on existing systems</span></li></ul>
   </div></section>
 

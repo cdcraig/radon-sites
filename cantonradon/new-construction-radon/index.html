@@ -56,6 +56,9 @@ p{margin:12px 0}
 .stat b{display:block;font-size:25px;color:var(--brand);line-height:1.1;letter-spacing:-.02em;font-weight:800}
 .stat span{display:block;font-size:12px;color:var(--muted);margin-top:5px;line-height:1.4}
 .src{font-size:11.5px;color:var(--muted);margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+.viz{margin:20px 0 0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+.viz svg{width:100%;height:auto;display:block}
+.viz figcaption{font-size:12.5px;color:var(--muted);margin-top:12px;padding-top:11px;border-top:1px dashed var(--line);line-height:1.5}
 .checks{list-style:none;margin:16px 0 0}
 .checks li{display:flex;gap:11px;align-items:flex-start;margin:11px 0;font-size:15.5px}
 .checks svg{color:var(--ok);margin-top:4px;font-size:17px}
@@ -141,12 +144,31 @@ footer .disc{font-size:12px;color:#7d90a9;margin-top:18px;padding-top:16px;borde
       <p>Building radon-resistant features into a house during construction costs a fraction of retrofitting the same house later — the gravel layer, membrane, and rough-in pipe go in while the slab is still open, with no core drilling, no finished-basement demolition, and no exterior pipe to hide. Stark County sits on glacial till over fractured shale and limestone — uranium-bearing rock whose fractures give radon a direct path toward foundations. A new Canton home is not meaningfully less likely to have a radon problem than an old one; tighter modern envelopes reduce air exchange, which can concentrate soil gas rather than dilute it. That is why radon-resistant construction is treated as standard practice by many builders in this area rather than an upgrade.</p>
       <p class="src">Sources: EPA Map of Radon Zones (Ohio); Ohio Department of Health; county-level radon measurement data</p>
     </div>
+    <figure class="viz">
+<svg viewBox="0 0 640 208" role="img" aria-label="Share of homes testing above the EPA action level of 4.0 pCi/L. Sources: EPA (national, ~1 in 15 homes); state radon surveys." xmlns="http://www.w3.org/2000/svg">
+<title>Homes above the EPA radon action level</title>
+<text x="120" y="35" text-anchor="end" font-size="14" font-weight="500" fill="#6b7c93">U.S. average</text>
+<rect x="132" y="20" width="37.76436552274541" height="22" rx="4" fill="#c3d3e8"/>
+<text x="178.7643655227454" y="36" font-size="14" font-weight="600" fill="#6b7c93">6.7%</text>
+<text x="120" y="81" text-anchor="end" font-size="14" font-weight="500" fill="#6b7c93">Pennsylvania</text>
+<rect x="132" y="66" width="225.45889864325616" height="22" rx="4" fill="#c3d3e8"/>
+<text x="366.45889864325613" y="82" font-size="14" font-weight="600" fill="#6b7c93">40%</text>
+<text x="120" y="127" text-anchor="end" font-size="14" font-weight="700" fill="#0f1b2d">Ohio</text>
+<rect x="132" y="112" width="281.8236233040702" height="22" rx="4" fill="#d64520"/>
+<text x="422.8236233040702" y="128" font-size="14" font-weight="800" fill="#d64520">50%</text>
+<text x="120" y="173" text-anchor="end" font-size="14" font-weight="500" fill="#6b7c93">Iowa</text>
+<rect x="132" y="158" width="403.5714285714285" height="22" rx="4" fill="#c3d3e8"/>
+<text x="544.5714285714284" y="174" font-size="14" font-weight="600" fill="#6b7c93">71.6%</text>
+</svg>
+<figcaption>Share of homes testing above the EPA action level of 4.0 pCi/L. Sources: EPA (national, ~1 in 15 homes); state radon surveys.</figcaption>
+</figure>
   </div></section>
 
   <section><div class="wrap">
     <h2>What gets built in — and the passive/active question</h2>
     <div class="review-note">DRAFT — human editorial pass required before publish.</div>
     <p>A radon-resistant new build layers in five things: a <strong>gas-permeable aggregate layer</strong> under the slab, a <strong>polyethylene vapour barrier</strong> over it, <strong>sealed and caulked</strong> slab penetrations and joints, a <strong>vent pipe</strong> run from the aggregate up through the building and out the roof, and a <strong>junction box</strong> in the attic so a fan can be added later without new wiring.</p><p>That stack is a <strong>passive</strong> system — it relies on natural stack effect and does reduce levels, but in a Zone 1 county it frequently does not get a house under 4.0 pCi/L on its own. The honest sequence is: build the passive system, <strong>test the finished house</strong>, and if it is still above the action level, add the fan to make it <strong>active</strong>. Because the pipe and electrical junction already exist, that conversion is a short, inexpensive job instead of a full retrofit.</p>
+    
     <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Full RRNC rough-in coordinated with the slab pour</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Passive-to-active conversion — adding the fan to an existing rough-in</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Post-construction testing to confirm whether the passive system is enough</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Builder and contractor coordination across Stark County</span></li></ul>
   </div></section>
 

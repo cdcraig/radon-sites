@@ -56,6 +56,9 @@ p{margin:12px 0}
 .stat b{display:block;font-size:25px;color:var(--brand);line-height:1.1;letter-spacing:-.02em;font-weight:800}
 .stat span{display:block;font-size:12px;color:var(--muted);margin-top:5px;line-height:1.4}
 .src{font-size:11.5px;color:var(--muted);margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+.viz{margin:20px 0 0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+.viz svg{width:100%;height:auto;display:block}
+.viz figcaption{font-size:12.5px;color:var(--muted);margin-top:12px;padding-top:11px;border-top:1px dashed var(--line);line-height:1.5}
 .checks{list-style:none;margin:16px 0 0}
 .checks li{display:flex;gap:11px;align-items:flex-start;margin:11px 0;font-size:15.5px}
 .checks svg{color:var(--ok);margin-top:4px;font-size:17px}
@@ -141,12 +144,31 @@ footer .disc{font-size:12px;color:#7d90a9;margin-top:18px;padding-top:16px;borde
       <p>Radon fans run continuously — every hour of every day — and they wear out, generally somewhere in the <strong>five-to-ten-year</strong> range. When a fan fails in Stark County, the house does not drift back to a mildly elevated level; it returns toward its untreated baseline. Stark County sits on glacial till over fractured shale and limestone — uranium-bearing rock whose fractures give radon a direct path toward foundations. The failure is easy to miss because there is nothing to see or smell. The one indicator is the <strong>manometer</strong> — the small U-shaped gauge on the pipe. If the liquid in both legs has levelled out, the system is no longer pulling suction and the house is effectively unmitigated.</p>
       <p class="src">Sources: EPA Map of Radon Zones (Ohio); Ohio Department of Health; county-level radon measurement data</p>
     </div>
+    <figure class="viz">
+<svg viewBox="0 0 640 208" role="img" aria-label="Share of homes testing above the EPA action level of 4.0 pCi/L. Sources: EPA (national, ~1 in 15 homes); state radon surveys." xmlns="http://www.w3.org/2000/svg">
+<title>Homes above the EPA radon action level</title>
+<text x="120" y="35" text-anchor="end" font-size="14" font-weight="500" fill="#6b7c93">U.S. average</text>
+<rect x="132" y="20" width="37.76436552274541" height="22" rx="4" fill="#c3d3e8"/>
+<text x="178.7643655227454" y="36" font-size="14" font-weight="600" fill="#6b7c93">6.7%</text>
+<text x="120" y="81" text-anchor="end" font-size="14" font-weight="500" fill="#6b7c93">Pennsylvania</text>
+<rect x="132" y="66" width="225.45889864325616" height="22" rx="4" fill="#c3d3e8"/>
+<text x="366.45889864325613" y="82" font-size="14" font-weight="600" fill="#6b7c93">40%</text>
+<text x="120" y="127" text-anchor="end" font-size="14" font-weight="700" fill="#0f1b2d">Ohio</text>
+<rect x="132" y="112" width="281.8236233040702" height="22" rx="4" fill="#d64520"/>
+<text x="422.8236233040702" y="128" font-size="14" font-weight="800" fill="#d64520">50%</text>
+<text x="120" y="173" text-anchor="end" font-size="14" font-weight="500" fill="#6b7c93">Iowa</text>
+<rect x="132" y="158" width="403.5714285714285" height="22" rx="4" fill="#c3d3e8"/>
+<text x="544.5714285714284" y="174" font-size="14" font-weight="600" fill="#6b7c93">71.6%</text>
+</svg>
+<figcaption>Share of homes testing above the EPA action level of 4.0 pCi/L. Sources: EPA (national, ~1 in 15 homes); state radon surveys.</figcaption>
+</figure>
   </div></section>
 
   <section><div class="wrap">
     <h2>Common failures on Canton radon systems</h2>
     <div class="review-note">DRAFT — human editorial pass required before publish.</div>
     <p>The most common call is a <strong>dead or dying fan</strong>. A fan that has gone silent, or one that has become noticeably louder or started vibrating, is usually at the end of its bearings. Replacement is straightforward, but the replacement fan has to be matched to the original design — an undersized unit will not hold suction under the slab, and an oversized one wastes electricity and can pull conditioned air out of the house.</p><p>Other frequent problems: <strong>seal failures</strong> where the suction point meets the slab or around a sump lid, which let the fan pull room air instead of soil gas; <strong>cracked or disconnected pipe</strong>, often in an attic run or where the pipe exits; and <strong>systems that were undersized from the start</strong> and never actually got the house below 4.0 pCi/L. Any repair should end the same way an installation does — with a retest that proves the level came back down.</p>
+    
     <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Radon fan replacement, sized to the original system design</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Manometer diagnosis — confirming whether the system still pulls suction</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Re-sealing suction points, sump lids, and foundation penetrations</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Repairs and retesting on systems installed by other contractors</span></li></ul>
   </div></section>
 
