@@ -62,6 +62,17 @@ p{margin:12px 0}
 .heroimg{margin:22px 0 0;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 4px 18px rgba(15,27,45,.07);line-height:0}
 .heroimg img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
 .credit{font-size:11px;color:var(--muted);margin-top:7px;line-height:1.4}
+.featured{background:linear-gradient(135deg,#0a5ad4,#084bb0);color:#fff;border-radius:14px;padding:20px;margin:18px 0;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.featured h3{color:#fff;font-size:17px}
+.featured p{color:#dce8fa;margin:4px 0 0;font-size:14px}
+.featured .btn-call{background:var(--accent);width:auto;display:inline-flex;padding:12px 18px}
+.dir{display:grid;gap:12px;margin:16px 0}
+.dir .co{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:4px}
+.dir .co b{color:var(--ink);font-size:16px}
+.dir .co .meta{font-size:13.5px;color:var(--muted)}
+.dir .co .cert{font-size:12px;color:var(--ok);font-weight:700}
+.dir .co a{font-weight:600}
+@media(min-width:700px){.dir{grid-template-columns:1fr 1fr}}
 .legend{list-style:none;margin:16px 0 0;display:grid;gap:9px}
 .legend li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--body);line-height:1.5}
 .legend span{width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:12.5px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px}
@@ -175,6 +186,7 @@ footer .disc{font-size:12px;color:#7d90a9;margin-top:18px;padding-top:16px;borde
   <section><div class="wrap">
     <h2>What gets built in — and the passive/active question</h2>
     <div class="review-note">DRAFT — human editorial pass required before publish.</div>
+    
     <p>Ohio regulates radon professionals through the Department of Health, and Stark County's Zone 1 designation makes radon-resistant construction an easy call for local builders: the county's measured average of 6.42 pCi/L is well above the federal action level before any mitigation. The fractured-bedrock geology under Canton also argues for building the system in from the start — fracture-fed radon delivery is uneven enough that even two adjacent new builds can test very differently, and the rough-in costs a fraction of what a retrofit does.</p><p>A radon-resistant new build layers in five things: a <strong>gas-permeable aggregate layer</strong> under the slab, a <strong>polyethylene vapour barrier</strong> over it, <strong>sealed and caulked</strong> slab penetrations and joints, a <strong>vent pipe</strong> run from the aggregate up through the building and out the roof, and a <strong>junction box</strong> in the attic so a fan can be added later without new wiring.</p><p>That stack is a <strong>passive</strong> system — it relies on natural stack effect and does reduce levels, but in a Zone 1 county it frequently does not get a house under 4.0 pCi/L on its own. The honest sequence is: build the passive system, <strong>test the finished house</strong>, and if it is still above the action level, add the fan to make it <strong>active</strong>. Because the pipe and electrical junction already exist, that conversion is a short, inexpensive job instead of a full retrofit.</p>
     
     <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Full RRNC rough-in coordinated with the slab pour</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Passive-to-active conversion — adding the fan to an existing rough-in</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Post-construction testing to confirm whether the passive system is enough</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Builder and contractor coordination across Stark County</span></li></ul>
